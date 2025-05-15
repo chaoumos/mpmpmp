@@ -1,0 +1,39 @@
+---
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout title="Welcome to mpmpmpmp!" description="The AI blog and automation hub.">
+	<section class="hero py-12">
+		<div class="container mx-auto text-center">
+			<h1 class="text-4xl font-bold text-primary mb-4">Empowering Automation with AI</h1>
+			<p class="text-lg text-gray-700 mb-8">Welcome to mpmpmpmp, your go-to resource for exploring the intersection of artificial intelligence and automation. Discover insights, tutorials, and cutting-edge strategies to streamline your workflows and unlock new possibilities.</p>
+			<a href="/blog" class="bg-primary text-white py-2 px-6 rounded-md hover:bg-secondary">Explore the Blog</a>
+		</div>
+	</section>
+
+	<section class="featured-articles py-8">
+		<div class="container mx-auto">
+			<h2 class="text-2xl font-semibold text-gray-800 mb-4">Featured Articles</h2>
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+				<div class="bg-white shadow-md rounded-md p-4">
+					<img src="https://placehold.co/600x400.png" alt="AI in Business" data-ai-hint="abstract representation of artificial intelligence in a business setting" class="mb-4 rounded-md"/>
+					<h3 class="text-xl font-semibold text-gray-800 mb-2">AI in Business: A Practical Guide</h3>
+					<p class="text-gray-600">Learn how to leverage AI to optimize your business processes and gain a competitive edge.</p>
+					<a href="#" class="text-primary hover:text-secondary mt-2 block">Read More</a>
+				</div>
+				<div class="bg-white shadow-md rounded-md p-4">
+					<img src="https://placehold.co/600x400.png" alt="Robotic Automation" data-ai-hint="futuristic robotic arms working in a factory" class="mb-4 rounded-md"/>
+					<h3 class="text-xl font-semibold text-gray-800 mb-2">Robotic Automation: The Future of Work</h3>
+					<p class="text-gray-600">Discover the benefits of robotic process automation and its impact on the modern workforce.</p>
+					<a href="#" class="text-primary hover:text-secondary mt-2 block">Read More</a>
+				</div>
+				<div class="bg-white shadow-md rounded-md p-4">
+					<img src="https://placehold.co/600x400.png" alt="Machine Learning" data-ai-hint="a complex machine learning algorithm visualized as a network" class="mb-4 rounded-md"/>
+					<h3 class="text-xl font-semibold text-gray-800 mb-2">Demystifying Machine Learning: A Beginner's Guide</h3>
+					<p class="text-gray-600">Get started with machine learning and understand its core concepts and applications.</p>
+					<a href="#" class="text-primary hover:text-secondary mt-2 block">Read More</a>
+				</div>
+			</div>
+		</div>
+	</section>
+</Layout>

@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+interface Props {
+	title: string;
+	description: string;
+	pubDate: string;
+}
+
+const { title, description, pubDate } = Astro.props;
+---
+
+<Layout title={Astro.props.title} description={Astro.props.description}>
+	<article class="mx-auto py-8">
+		<div class="mb-4">
+			<h1 class="text-3xl font-bold text-gray-900 dark:text-gray-100">{title}</h1>
+			<time datetime={pubDate} class="text-gray-600 dark:text-gray-400">
+				{new Date(pubDate).toLocaleDateString()}
+			</time>
+			<p class="mt-2 text-gray-700 dark:text-gray-300">{description}</p>
+		</div>
+		<div class="prose lg:prose-xl dark:prose-invert">
+			<slot />
+		</div>
+	</article>
+</Layout>
